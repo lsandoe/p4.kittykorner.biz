@@ -1,0 +1,30 @@
+<head>
+
+<title>Dynamic Database</title>
+
+<script type="text/javascript" src="../js/events.js"></script>
+</head>
+<body onload="doOnLoad(this)">
+
+<p id="status"><img src="images/blank.png" alt="event image" id="event_image" /><br/>
+<span id="statuscaption">Event images and messages will display here.</span></p>
+
+<form id="myform" action="http://morpheus.dce.harvard.edu/cgi-bin/echo.cgi" >
+  <fieldset>
+  <legend>Symptoms</legend>
+ 
+  <p>
+    <input type="checkbox" id="optin" name="optin" value="Y" onclick="doOnClick(this)" />
+    <label for="optin">Opt-in to receive promotional offers</label>
+  </p>
+
+  <p>
+    <input type="submit" name="Submit" value="Submit"/>
+  </p>
+  </fieldset>
+</form>
+</body>
+</html>
+
+
+

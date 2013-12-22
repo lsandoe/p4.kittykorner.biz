@@ -1,0 +1,30 @@
+
+<head>
+
+<title>You M.D. - A Patients Guide to Staying Healthy</title>
+
+<script type="text/javascript" src="js/source.js"></script>
+</head>
+<body onLoad="doOnLoad(this)">
+
+<img src="" alt="Welcome to You M.D." id="introImage">
+
+
+<form id="mainForm" action="possibleDiseases.php" method="get">
+  <fieldset>
+  <legend>Symptoms to Select From</legend>
+ 
+
+    <input type="checkbox" id="legend" name="symptoms[]" value="vomitting" onClick="doOnClick(this)" />
+    <label for="legend">vomitting</label>
+    
+    <input type="checkbox" id="legend" name="symptoms[]" value="headache" onClick="doOnClick(this)" />
+    <label for="legend">headache</label>
+
+  <p>
+    <input type="submit" value="Diagnose Symptoms"/>
+  </p>
+  </fieldset>
+</form>
+</body>
+</html>
