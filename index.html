@@ -10,17 +10,56 @@
 <img src="" alt="Welcome to You M.D." id="introImage">
 
 
-<form id="mainForm" action="possibleDiseases.php" method="get">
+<form id="mainForm" action="possibleDiseases.php" method="post">
   <fieldset>
   <legend>Symptoms to Select From</legend>
  
 
+    <input type="checkbox" id="legend" name="symptoms[]" value="abdominalPain" onClick="doOnClick(this)" />
+    <label for="legend">Abdominal Pain</label>
+    
+    <input type="checkbox" id="legend" name="symptoms[]" value="abdominalCramping" onClick="doOnClick(this)" />
+    <label for="legend">Abdominal Cramping</label>
+
+    <input type="checkbox" id="legend" name="symptoms[]" value="diarrhea" onClick="doOnClick(this)" />
+    <label for="legend">Diarrhea</label>
+    
+    <input type="checkbox" id="legend" name="symptoms[]" value="nausea" onClick="doOnClick(this)" />
+    <label for="legend">Nausea</label>
+
     <input type="checkbox" id="legend" name="symptoms[]" value="vomitting" onClick="doOnClick(this)" />
-    <label for="legend">vomitting</label>
+    <label for="legend">Vomitting</label>
+    
+    <input type="checkbox" id="legend" name="symptoms[]" value="fever" onClick="doOnClick(this)" />
+    <label for="legend">Fever</label>
+
+    <input type="checkbox" id="legend" name="symptoms[]" value="soreThroat" onClick="doOnClick(this)" />
+    <label for="legend">Sore Throat</label>
+    
+    <input type="checkbox" id="legend" name="symptoms[]" value="cough" onClick="doOnClick(this)" />
+    <label for="legend">Cough</label>
+
+    <input type="checkbox" id="legend" name="symptoms[]" value="fatigue" onClick="doOnClick(this)" />
+    <label for="legend">Fatigue</label>
+    
+    <input type="checkbox" id="legend" name="symptoms[]" value="runnyNose" onClick="doOnClick(this)" />
+    <label for="legend">Runny Nose</label>
+
+    <input type="checkbox" id="legend" name="symptoms[]" value="malaise" onClick="doOnClick(this)" />
+    <label for="legend">Malaise</label>
     
     <input type="checkbox" id="legend" name="symptoms[]" value="headache" onClick="doOnClick(this)" />
-    <label for="legend">headache</label>
+    <label for="legend">Headache</label>
 
+    <input type="checkbox" id="legend" name="symptoms[]" value="rash" onClick="doOnClick(this)" />
+    <label for="legend">Rash</label>
+    
+    <input type="checkbox" id="legend" name="symptoms[]" value="jaundice" onClick="doOnClick(this)" />
+    <label for="legend">Jaundice</label>
+
+    <input type="checkbox" id="legend" name="symptoms[]" value="swollenLymphNodes" onClick="doOnClick(this)" />
+    <label for="legend">Swollen Lymph Nodes</label>
+    
   <p>
     <input type="submit" value="Diagnose Symptoms"/>
   </p>
