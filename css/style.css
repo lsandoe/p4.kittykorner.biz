@@ -1,3 +1,7 @@
-@charset "UTF-8";
-/* CSS Document */
+body {
+	margin: 50px;
+}
 
+#output {
+	margin: 50px;
+}

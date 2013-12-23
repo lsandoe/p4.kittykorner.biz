@@ -13,8 +13,12 @@ if (count($criteria))
 	
 $sql = $sql . ";"; 
 
-echo"The sql statement is presented below:<hr><br>";
-echo $sql;
+echo '<div id="output">';
+
+echo '<img src="img/background.png" alt="You M.D. header">';
+
+//echo"The sql statement is presented below:<hr><br>";
+//echo $sql;
 	
 //connect to database
 $con=mysqli_connect("localhost","stduser","stduser","p4_kittykorner_biz");
@@ -31,8 +35,6 @@ echo "<table border='1'>
 <th>Disease</th>
 <th>Description</th>
 <th>How it Spreads</th>
-<th>Incubation Period</th>
-<th>Is it Contagious?</th>
 <th>Prevention</th>
 <th>Symptoms</th>
 </tr>";
@@ -43,14 +45,14 @@ while($row = mysqli_fetch_array($result))
   echo "<td>" . $row['disease'] . "</td>";
   echo "<td>" . $row['description'] . "</td>";
   echo "<td>" . $row['howItSpreads'] . "</td>";
-  echo "<td>" . $row['incubationPeriod'] . "</td>";
-  echo "<td>" . $row['contagious'] . "</td>";
   echo "<td>" . $row['prevention'] . "</td>";
   echo "<td>" . $row['symptoms'] . "</td>";
   echo "</tr>";
   }
 echo "</table>";
 
+
+echo '</div>';
 mysqli_close($con);
 		
 ?>
